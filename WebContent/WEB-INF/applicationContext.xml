@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="baseAction" class="net.b2bplanet.jbb.web.BaseAction" >
+    </bean>
+    <bean id="userAction" class="net.b2bplanet.jbb.web.UserAction" >
+    </bean>
+    
+    <!-- Following are application configuration mappings. -->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:config.properties"/>
+	</bean>
+</beans>
